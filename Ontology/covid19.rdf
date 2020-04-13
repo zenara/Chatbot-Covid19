@@ -22,6 +22,220 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://covid19.rdf#do -->
+
+    <owl:ObjectProperty rdf:about="http://covid19.rdf#do">
+        <rdfs:domain rdf:resource="http://covid19.rdf#Infected"/>
+        <rdfs:range rdf:resource="http://covid19.rdf#Medications"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://covid19.rdf#follow -->
+
+    <owl:ObjectProperty rdf:about="http://covid19.rdf#follow">
+        <rdfs:range rdf:resource="http://covid19.rdf#Precautions"/>
+        <rdfs:domain rdf:resource="http://covid19.rdf#Uninfected"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://covid19.rdf#have -->
+
+    <owl:ObjectProperty rdf:about="http://covid19.rdf#have">
+        <rdfs:range rdf:resource="http://covid19.rdf#InfectionPossibilities"/>
+        <rdfs:domain rdf:resource="http://covid19.rdf#Uninfected"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://covid19.rdf#live -->
+
+    <owl:ObjectProperty rdf:about="http://covid19.rdf#live">
+        <rdfs:range rdf:resource="http://covid19.rdf#Countries"/>
+        <rdfs:domain rdf:resource="http://covid19.rdf#People"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://covid19.rdf#show -->
+
+    <owl:ObjectProperty rdf:about="http://covid19.rdf#show">
+        <rdfs:domain rdf:resource="http://covid19.rdf#Infected"/>
+        <rdfs:range rdf:resource="http://covid19.rdf#Symptoms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://covid19.rdf#undergo -->
+
+    <owl:ObjectProperty rdf:about="http://covid19.rdf#undergo">
+        <rdfs:range rdf:resource="http://covid19.rdf#HigherRiskPossibilities"/>
+        <rdfs:domain rdf:resource="http://covid19.rdf#Uninfected"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://covid19.rdf#c_highrisk -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#c_highrisk">
+        <rdfs:domain rdf:resource="http://covid19.rdf#Countries"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#c_id -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#c_id">
+        <rdfs:domain rdf:resource="http://covid19.rdf#Countries"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#c_name -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#c_name">
+        <rdfs:domain rdf:resource="http://covid19.rdf#Countries"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#hrp_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#hrp_desc"/>
+    
+
+
+    <!-- http://covid19.rdf#hrp_id -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#hrp_id"/>
+    
+
+
+    <!-- http://covid19.rdf#ip_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#ip_desc">
+        <rdfs:domain rdf:resource="http://covid19.rdf#InfectionPossibilities"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#ip_id -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#ip_id">
+        <rdfs:domain rdf:resource="http://covid19.rdf#InfectionPossibilities"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#med_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#med_desc">
+        <rdfs:domain rdf:resource="http://covid19.rdf#Medications"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#med_id -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#med_id">
+        <rdfs:domain rdf:resource="http://covid19.rdf#Medications"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#p_fname -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#p_fname">
+        <rdfs:domain rdf:resource="http://covid19.rdf#People"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#p_id -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#p_id">
+        <rdfs:domain rdf:resource="http://covid19.rdf#People"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#p_lname -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#p_lname">
+        <rdfs:domain rdf:resource="http://covid19.rdf#People"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#prec_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#prec_desc">
+        <rdfs:domain rdf:resource="http://covid19.rdf#Precautions"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#prec_id -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#prec_id">
+        <rdfs:domain rdf:resource="http://covid19.rdf#Precautions"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#symp_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#symp_desc">
+        <rdfs:domain rdf:resource="http://covid19.rdf#Symptoms"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://covid19.rdf#symp_id -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#symp_id">
+        <rdfs:domain rdf:resource="http://covid19.rdf#Symptoms"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -33,6 +247,21 @@
     <!-- http://covid19.rdf#Countries -->
 
     <owl:Class rdf:about="http://covid19.rdf#Countries"/>
+    
+
+
+    <!-- http://covid19.rdf#HigherRiskPossibilities -->
+
+    <owl:Class rdf:about="http://covid19.rdf#HigherRiskPossibilities"/>
+    
+
+
+    <!-- http://covid19.rdf#Infected -->
+
+    <owl:Class rdf:about="http://covid19.rdf#Infected">
+        <rdfs:subClassOf rdf:resource="http://covid19.rdf#People"/>
+        <owl:disjointWith rdf:resource="http://covid19.rdf#Uninfected"/>
+    </owl:Class>
     
 
 
@@ -48,9 +277,9 @@
     
 
 
-    <!-- http://covid19.rdf#PeopleInRisk -->
+    <!-- http://covid19.rdf#People -->
 
-    <owl:Class rdf:about="http://covid19.rdf#PeopleInRisk"/>
+    <owl:Class rdf:about="http://covid19.rdf#People"/>
     
 
 
@@ -63,6 +292,438 @@
     <!-- http://covid19.rdf#Symptoms -->
 
     <owl:Class rdf:about="http://covid19.rdf#Symptoms"/>
+    
+
+
+    <!-- http://covid19.rdf#Uninfected -->
+
+    <owl:Class rdf:about="http://covid19.rdf#Uninfected">
+        <rdfs:subClassOf rdf:resource="http://covid19.rdf#People"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://covid19.rdf#DE -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#DE">
+        <rdf:type rdf:resource="http://covid19.rdf#Countries"/>
+        <c_highrisk rdf:datatype="&xsd;int">1</c_highrisk>
+        <c_id rdf:datatype="&xsd;string">C01</c_id>
+        <c_name rdf:datatype="&xsd;string">Germany</c_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#ES -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#ES">
+        <rdf:type rdf:resource="http://covid19.rdf#Countries"/>
+        <c_highrisk rdf:datatype="&xsd;int">1</c_highrisk>
+        <c_id rdf:datatype="&xsd;string">C02</c_id>
+        <c_name rdf:datatype="&xsd;string">Spain</c_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#FR -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#FR">
+        <rdf:type rdf:resource="http://covid19.rdf#Countries"/>
+        <c_highrisk rdf:datatype="&xsd;int">1</c_highrisk>
+        <c_id rdf:datatype="&xsd;string">C03</c_id>
+        <c_name rdf:datatype="&xsd;string">France</c_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#GA -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#GA">
+        <rdf:type rdf:resource="http://covid19.rdf#Countries"/>
+        <c_highrisk rdf:datatype="&xsd;int">0</c_highrisk>
+        <c_id rdf:datatype="&xsd;string">C04</c_id>
+        <c_name rdf:datatype="&xsd;string">Georgia</c_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#HRP_1 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#HRP_1">
+        <rdf:type rdf:resource="http://covid19.rdf#HigherRiskPossibilities"/>
+        <hrp_id rdf:datatype="&xsd;string">HRP01</hrp_id>
+        <hrp_desc rdf:datatype="&xsd;string">People aged 65 years and older.</hrp_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#HRP_2 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#HRP_2">
+        <rdf:type rdf:resource="http://covid19.rdf#HigherRiskPossibilities"/>
+        <hrp_id rdf:datatype="&xsd;string">HRP02</hrp_id>
+        <hrp_desc rdf:datatype="&xsd;string">People who live in a nursing home or long-term care facility.</hrp_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#HRP_3 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#HRP_3">
+        <rdf:type rdf:resource="http://covid19.rdf#HigherRiskPossibilities"/>
+        <hrp_id rdf:datatype="&xsd;string">HRP03</hrp_id>
+        <hrp_desc rdf:datatype="&xsd;string">People with chronic lung disease or moderate to severe asthma.</hrp_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#HRP_4 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#HRP_4">
+        <rdf:type rdf:resource="http://covid19.rdf#HigherRiskPossibilities"/>
+        <hrp_id rdf:datatype="&xsd;string">HRP04</hrp_id>
+        <hrp_desc rdf:datatype="&xsd;string">People who have serious heart conditions.</hrp_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#HRP_5 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#HRP_5">
+        <rdf:type rdf:resource="http://covid19.rdf#HigherRiskPossibilities"/>
+        <hrp_id rdf:datatype="&xsd;string">HRP05</hrp_id>
+        <hrp_desc rdf:datatype="&xsd;string">People who are immunocompromised.</hrp_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#HRP_6 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#HRP_6">
+        <rdf:type rdf:resource="http://covid19.rdf#HigherRiskPossibilities"/>
+        <hrp_id rdf:datatype="&xsd;string">HRP06</hrp_id>
+        <hrp_desc rdf:datatype="&xsd;string">People with severe obesity (body mass index [BMI] of 40 or higher.</hrp_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#HRP_7 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#HRP_7">
+        <rdf:type rdf:resource="http://covid19.rdf#HigherRiskPossibilities"/>
+        <hrp_id rdf:datatype="&xsd;string">HRP07</hrp_id>
+        <hrp_desc rdf:datatype="&xsd;string">People with diabetes.</hrp_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#HRP_8 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#HRP_8">
+        <rdf:type rdf:resource="http://covid19.rdf#HigherRiskPossibilities"/>
+        <hrp_id rdf:datatype="&xsd;string">HRP08</hrp_id>
+        <hrp_desc rdf:datatype="&xsd;string">People with chronic kidney disease undergoing dialysis.</hrp_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#HRP_9 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#HRP_9">
+        <rdf:type rdf:resource="http://covid19.rdf#HigherRiskPossibilities"/>
+        <hrp_id rdf:datatype="&xsd;string">HRP09</hrp_id>
+        <hrp_desc rdf:datatype="&xsd;string">People with liver disease.</hrp_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#IP_1 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#IP_1">
+        <rdf:type rdf:resource="http://covid19.rdf#InfectionPossibilities"/>
+        <ip_id rdf:datatype="&xsd;string">IP01</ip_id>
+        <ip_desc rdf:datatype="&xsd;string">Through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales.</ip_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#ITL -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#ITL">
+        <rdf:type rdf:resource="http://covid19.rdf#Countries"/>
+        <c_highrisk rdf:datatype="&xsd;int">1</c_highrisk>
+        <c_id rdf:datatype="&xsd;string">C05</c_id>
+        <c_name rdf:datatype="&xsd;string">Italy</c_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#I_1 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#I_1">
+        <rdf:type rdf:resource="http://covid19.rdf#Infected"/>
+        <p_fname rdf:datatype="&xsd;string">Andrew</p_fname>
+        <p_id rdf:datatype="&xsd;string">P01</p_id>
+        <p_lname rdf:datatype="&xsd;string">Zoysa</p_lname>
+        <live rdf:resource="http://covid19.rdf#GA"/>
+        <do rdf:resource="http://covid19.rdf#MED_1"/>
+        <do rdf:resource="http://covid19.rdf#MED_2"/>
+        <do rdf:resource="http://covid19.rdf#MED_3"/>
+        <do rdf:resource="http://covid19.rdf#MED_4"/>
+        <show rdf:resource="http://covid19.rdf#SYMP_1"/>
+        <show rdf:resource="http://covid19.rdf#SYMP_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#I_2 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#I_2">
+        <rdf:type rdf:resource="http://covid19.rdf#Infected"/>
+        <p_fname rdf:datatype="&xsd;string">Buvi</p_fname>
+        <p_id rdf:datatype="&xsd;string">P02</p_id>
+        <p_lname rdf:datatype="&xsd;string">Yvone</p_lname>
+        <live rdf:resource="http://covid19.rdf#ITL"/>
+        <do rdf:resource="http://covid19.rdf#MED_1"/>
+        <do rdf:resource="http://covid19.rdf#MED_2"/>
+        <show rdf:resource="http://covid19.rdf#SYMP_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#I_3 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#I_3">
+        <rdf:type rdf:resource="http://covid19.rdf#Infected"/>
+        <p_fname rdf:datatype="&xsd;string">Cinderella</p_fname>
+        <p_id rdf:datatype="&xsd;string">P03</p_id>
+        <p_lname rdf:datatype="&xsd;string">Xander</p_lname>
+        <do rdf:resource="http://covid19.rdf#MED_4"/>
+        <show rdf:resource="http://covid19.rdf#SYMP_4"/>
+        <live rdf:resource="http://covid19.rdf#USA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#MED_1 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#MED_1">
+        <rdf:type rdf:resource="http://covid19.rdf#Medications"/>
+        <med_id rdf:datatype="&xsd;string">MED01</med_id>
+        <med_desc rdf:datatype="&xsd;string">Rest and sleep well.</med_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#MED_2 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#MED_2">
+        <rdf:type rdf:resource="http://covid19.rdf#Medications"/>
+        <med_desc rdf:datatype="&xsd;string">Keep warm.</med_desc>
+        <med_id rdf:datatype="&xsd;string">MED02</med_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#MED_3 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#MED_3">
+        <rdf:type rdf:resource="http://covid19.rdf#Medications"/>
+        <med_desc rdf:datatype="&xsd;string">Drink plenty of liquids.</med_desc>
+        <med_id rdf:datatype="&xsd;string">MED03</med_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#MED_4 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#MED_4">
+        <rdf:type rdf:resource="http://covid19.rdf#Medications"/>
+        <med_id rdf:datatype="&xsd;string">MED04</med_id>
+        <med_desc rdf:datatype="&xsd;string">Use a room humidifier and take hot showers to help ease a sore throat and cough.</med_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#PNG -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#PNG">
+        <rdf:type rdf:resource="http://covid19.rdf#Countries"/>
+        <c_highrisk rdf:datatype="&xsd;int">0</c_highrisk>
+        <c_id rdf:datatype="&xsd;string">C06</c_id>
+        <c_name rdf:datatype="&xsd;string">Papua New Guinea</c_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#PREC_1 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#PREC_1">
+        <rdf:type rdf:resource="http://covid19.rdf#Precautions"/>
+        <prec_id rdf:datatype="&xsd;string">PREC01</prec_id>
+        <prec_desc rdf:datatype="&xsd;string">Stay home as much as you can.</prec_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#PREC_2 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#PREC_2">
+        <rdf:type rdf:resource="http://covid19.rdf#Precautions"/>
+        <prec_desc rdf:datatype="&xsd;string">Keep a safe distance.</prec_desc>
+        <prec_id rdf:datatype="&xsd;string">PREC02</prec_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#PREC_3 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#PREC_3">
+        <rdf:type rdf:resource="http://covid19.rdf#Precautions"/>
+        <prec_id rdf:datatype="&xsd;string">PREC03</prec_id>
+        <prec_desc rdf:datatype="&xsd;string">Wash hands often.</prec_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#PREC_4 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#PREC_4">
+        <rdf:type rdf:resource="http://covid19.rdf#Precautions"/>
+        <prec_desc rdf:datatype="&xsd;string">Cover your cough.</prec_desc>
+        <prec_id rdf:datatype="&xsd;string">PREC04</prec_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#PREC_5 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#PREC_5">
+        <rdf:type rdf:resource="http://covid19.rdf#Precautions"/>
+        <prec_id rdf:datatype="&xsd;string">PREC05</prec_id>
+        <prec_desc rdf:datatype="&xsd;string">Sick? Meet a doctor.</prec_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#SYMP_1 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#SYMP_1">
+        <rdf:type rdf:resource="http://covid19.rdf#Symptoms"/>
+        <symp_desc rdf:datatype="&xsd;string">Cough</symp_desc>
+        <symp_id rdf:datatype="&xsd;string">SYMP01</symp_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#SYMP_2 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#SYMP_2">
+        <rdf:type rdf:resource="http://covid19.rdf#Symptoms"/>
+        <symp_desc rdf:datatype="&xsd;string">Fever</symp_desc>
+        <symp_id rdf:datatype="&xsd;string">SYMP02</symp_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#SYMP_3 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#SYMP_3">
+        <rdf:type rdf:resource="http://covid19.rdf#Symptoms"/>
+        <symp_id rdf:datatype="&xsd;string">SYMP03</symp_id>
+        <symp_desc rdf:datatype="&xsd;string">Tiredness</symp_desc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#SYMP_4 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#SYMP_4">
+        <rdf:type rdf:resource="http://covid19.rdf#Symptoms"/>
+        <symp_desc rdf:datatype="&xsd;string">Difficulty in breathing</symp_desc>
+        <symp_id rdf:datatype="&xsd;string">SYMP04</symp_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#USA -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#USA">
+        <rdf:type rdf:resource="http://covid19.rdf#Countries"/>
+        <c_highrisk rdf:datatype="&xsd;int">1</c_highrisk>
+        <c_id rdf:datatype="&xsd;string">C07</c_id>
+        <c_name rdf:datatype="&xsd;string">United States of America</c_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#U_1 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#U_1">
+        <rdf:type rdf:resource="http://covid19.rdf#Uninfected"/>
+        <p_fname rdf:datatype="&xsd;string">Drake</p_fname>
+        <p_id rdf:datatype="&xsd;string">P04</p_id>
+        <p_lname rdf:datatype="&xsd;string">Weston</p_lname>
+        <undergo rdf:resource="http://covid19.rdf#HRP_2"/>
+        <have rdf:resource="http://covid19.rdf#IP_1"/>
+        <follow rdf:resource="http://covid19.rdf#PREC_1"/>
+        <follow rdf:resource="http://covid19.rdf#PREC_2"/>
+        <follow rdf:resource="http://covid19.rdf#PREC_3"/>
+        <live rdf:resource="http://covid19.rdf#ZIM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#U_2 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#U_2">
+        <rdf:type rdf:resource="http://covid19.rdf#Uninfected"/>
+        <p_fname rdf:datatype="&xsd;string">Evie</p_fname>
+        <p_id rdf:datatype="&xsd;string">P05</p_id>
+        <p_lname rdf:datatype="&xsd;string">Vanessa</p_lname>
+        <undergo rdf:resource="http://covid19.rdf#HRP_2"/>
+        <have rdf:resource="http://covid19.rdf#IP_1"/>
+        <live rdf:resource="http://covid19.rdf#PNG"/>
+        <follow rdf:resource="http://covid19.rdf#PREC_4"/>
+        <follow rdf:resource="http://covid19.rdf#PREC_5"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#U_3 -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#U_3">
+        <rdf:type rdf:resource="http://covid19.rdf#Uninfected"/>
+        <p_fname rdf:datatype="&xsd;string">Felix</p_fname>
+        <p_id rdf:datatype="&xsd;string">P06</p_id>
+        <p_lname rdf:datatype="&xsd;string">Unique</p_lname>
+        <live rdf:resource="http://covid19.rdf#FR"/>
+        <undergo rdf:resource="http://covid19.rdf#HRP_6"/>
+        <have rdf:resource="http://covid19.rdf#IP_1"/>
+        <follow rdf:resource="http://covid19.rdf#PREC_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#ZIM -->
+
+    <owl:NamedIndividual rdf:about="http://covid19.rdf#ZIM">
+        <rdf:type rdf:resource="http://covid19.rdf#Countries"/>
+        <c_highrisk rdf:datatype="&xsd;int">0</c_highrisk>
+        <c_id rdf:datatype="&xsd;string">C08</c_id>
+        <c_name rdf:datatype="&xsd;string">Zimbabwe</c_name>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
