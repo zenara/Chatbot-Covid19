@@ -1,0 +1,6 @@
+prefix covid: <http://covid19.rdf#>
+SELECT ?description
+WHERE
+{
+	?precautions covid:prec_desc ?description.
+}

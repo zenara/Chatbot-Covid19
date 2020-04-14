@@ -122,6 +122,15 @@
     
 
 
+    <!-- http://covid19.rdf#covid_desc -->
+
+    <owl:DatatypeProperty rdf:about="http://covid19.rdf#covid_desc">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://covid19.rdf#hrp_desc -->
 
     <owl:DatatypeProperty rdf:about="http://covid19.rdf#hrp_desc"/>
@@ -724,6 +733,16 @@
         <c_id rdf:datatype="&xsd;string">C08</c_id>
         <c_name rdf:datatype="&xsd;string">Zimbabwe</c_name>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://covid19.rdf#covid19_1 -->
+
+    <owl:Thing rdf:about="http://covid19.rdf#covid19_1">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+        <covid_desc rdf:datatype="&xsd;string">Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. 
+The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell. It takes 1- 14 days to show symptoms.</covid_desc>
+    </owl:Thing>
 </rdf:RDF>
 
 
