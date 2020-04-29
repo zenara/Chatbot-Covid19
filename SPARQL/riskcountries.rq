@@ -1,0 +1,6 @@
+prefix covid: <http://covid19.rdf#>
+SELECT ?countries
+WHERE
+{
+	?countries covid:c_highrisk 1
+}

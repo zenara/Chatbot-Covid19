@@ -101,6 +101,116 @@
             and avoiding close contact (1 meter or 3 feet) with people who are unwell. It takes 1- 14 days to show symptoms.</template>
     </category>
     <category>
+        <pattern>_CORONA</pattern>
+        <template>
+            <srai>CORONA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>CORONA *</pattern>
+        <template>
+            <srai>CORONA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>COVID-19</pattern>
+        <template>
+            <srai>CORONA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>COVID *</pattern>
+        <template>
+            <srai>CORONA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_COVID *</pattern>
+        <template>
+            <srai>CORONA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>CORONAVIRUS</pattern>
+        <template>
+            <srai>CORONA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_CORONAVIRUS</pattern>
+        <template>
+            <srai>CORONA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>CORONAVIRUS *</pattern>
+        <template>
+            <srai>CORONA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_CORONAVIRUS *</pattern>
+        <template>
+            <srai>CORONA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HIGH RISK</pattern>
+        <template>
+            People aged 65 years and older.
+            People who live in a nursing home or long-term care facility.
+            People with chronic lung disease or moderate to severe asthma.
+            People who have serious heart conditions.
+            People who are immunocompromised.
+            People with severe obesity (body mass index [BMI] of 40 or higher.
+            People with diabetes.
+            People with chronic kidney disease undergoing dialysis.
+            People with liver disease.
+        </template>
+    </category>
+    <category>
+        <pattern>INFECTION POSSIBILITIES</pattern>
+        <template>Through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales.</template>
+    </category>
+    <category>
+        <pattern>COUNTRIES</pattern>
+        <template>
+            Germany
+            Spain
+            France
+            Italy
+            United States of America
+        </template>
+    </category>
+    <category>
+        <pattern>MEDICATIONS</pattern>
+        <template>
+            Rest and sleep well.
+            Keep warm.
+            Drink plenty of liquids.
+            Use a room humidifier and take hot showers to help ease a sore throat and cough.
+        </template>
+    </category>
+    <category>
+        <pattern>PRECAUTIONS</pattern>
+        <template>
+            Stay home as much as you can.
+            Keep a safe distance.
+            Wash hands often.
+            Cover your cough.
+            Sick? Meet a doctor.
+        </template>
+    </category>
+    <category>
+        <pattern>SYMPTOMS</pattern>
+        <template>
+            Cough
+            Fever
+            Tiredness
+            Difficulty in breathing
+        </template>
+    </category>
+    <category>
         <pattern>INDUSTRY</pattern>
         <template>
             <srai>FACTORY</srai>
