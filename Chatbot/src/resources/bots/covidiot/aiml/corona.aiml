@@ -2,6 +2,22 @@
 <aiml>
     <!--  -->
     <category>
+        <pattern>*</pattern>
+        <template>Do you want me to tell about Coronavirus?</template>
+    </category>
+    <category>
+        <pattern>YES</pattern>
+        <that>Do you want me to tell about Coronavirus</that>
+        <template>
+            <srai>CORONA</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>NO</pattern>
+        <that>Do you want me to tell about Coronavirus</that>
+        <template>Oh! That's sad.</template>
+    </category>
+    <category>
         <pattern>HELLO</pattern>
         <template>
             <random>
@@ -51,7 +67,7 @@
     <category>
         <pattern>test</pattern>
         <template>
-            <reference about="file:/D:/Big%20Data%20Analytics%20-%20IIT/Semester2/Data%20Mining/Course%20Work/sectionA/Ontology/covid19.rdf"
+            <reference about="http://covid19.rdf#"
                        property="#IP_1:ip_desc" /> 
         </template>
     </category>
@@ -99,6 +115,12 @@
             fever, and in more severe cases, difficulty breathing. 
             You can protect yourself by washing your hands frequently, avoiding touching your face, 
             and avoiding close contact (1 meter or 3 feet) with people who are unwell. It takes 1- 14 days to show symptoms.</template>
+    </category>
+    <category>
+        <pattern>What is corona</pattern>
+        <template>
+            <srai>CORONA</srai>
+        </template>
     </category>
     <category>
         <pattern>_CORONA</pattern>
@@ -169,8 +191,80 @@
         </template>
     </category>
     <category>
+        <pattern>_HIGH RISK</pattern>
+        <template>
+            <srai>HIGH RISK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HIGH RISK *</pattern>
+        <template>
+            <srai>HIGH RISK</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_HIGH RISK *</pattern>
+        <template>
+            <srai>HIGH RISK</srai>
+        </template>
+    </category>
+    <category>
         <pattern>INFECTION POSSIBILITIES</pattern>
         <template>Through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales.</template>
+    </category>
+    <category>
+        <pattern>_INFECTION POSSIBILITIES</pattern>
+        <template>
+            <srai>INFECTION POSSIBILITIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>INFECTION POSSIBILITIES *</pattern>
+        <template>
+            <srai>INFECTION POSSIBILITIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_INFECTION POSSIBILITIES *</pattern>
+        <template>
+            <srai>INFECTION POSSIBILITIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_INFECTION</pattern>
+        <template>
+            <srai>INFECTION POSSIBILITIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>INFECTION *</pattern>
+        <template>
+            <srai>INFECTION POSSIBILITIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_INFECTION *</pattern>
+        <template>
+            <srai>INFECTION POSSIBILITIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_INFECT</pattern>
+        <template>
+            <srai>INFECTION POSSIBILITIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>INFECT *</pattern>
+        <template>
+            <srai>INFECTION POSSIBILITIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_INFECT *</pattern>
+        <template>
+            <srai>INFECTION POSSIBILITIES</srai>
+        </template>
     </category>
     <category>
         <pattern>COUNTRIES</pattern>
@@ -183,12 +277,84 @@
         </template>
     </category>
     <category>
+        <pattern>_COUNTRIES</pattern>
+        <template>
+            <srai>COUNTRIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>COUNTRIES *</pattern>
+        <template>
+            <srai>COUNTRIES</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_COUNTRIES *</pattern>
+        <template>
+            <srai>COUNTRIES</srai>
+        </template>
+    </category>
+    <category>
         <pattern>MEDICATIONS</pattern>
         <template>
             Rest and sleep well.
             Keep warm.
             Drink plenty of liquids.
             Use a room humidifier and take hot showers to help ease a sore throat and cough.
+        </template>
+    </category>
+    <category>
+        <pattern>_MEDICATIONS</pattern>
+        <template>
+            <srai>MEDICATIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>MEDICATIONS *</pattern>
+        <template>
+            <srai>MEDICATIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_MEDICATIONS *</pattern>
+        <template>
+            <srai>MEDICATIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_MEDICINE</pattern>
+        <template>
+            <srai>MEDICATIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>MEDICINE *</pattern>
+        <template>
+            <srai>MEDICATIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_MEDICINE *</pattern>
+        <template>
+            <srai>MEDICATIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_MEDICINES</pattern>
+        <template>
+            <srai>MEDICATIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>MEDICINES *</pattern>
+        <template>
+            <srai>MEDICATIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_MEDICINES *</pattern>
+        <template>
+            <srai>MEDICATIONS</srai>
         </template>
     </category>
     <category>
@@ -202,6 +368,66 @@
         </template>
     </category>
     <category>
+        <pattern>_PRECAUTIONS</pattern>
+        <template>
+            <srai>PRECAUTIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>PRECAUTIONS *</pattern>
+        <template>
+            <srai>PRECAUTIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_PRECAUTIONS *</pattern>
+        <template>
+            <srai>PRECAUTIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_SAFE</pattern>
+        <template>
+            <srai>PRECAUTIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>SAFE *</pattern>
+        <template>
+            <srai>PRECAUTIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_SAFE *</pattern>
+        <template>
+            <srai>PRECAUTIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_PROTECT</pattern>
+        <template>
+            <srai>PRECAUTIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>PROTECT *</pattern>
+        <template>
+            <srai>PRECAUTIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>_PROTECT *</pattern>
+        <template>
+            <srai>PRECAUTIONS</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>HOW TO PROTECT</pattern>
+        <template>
+            <srai>PRECAUTIONS</srai>
+        </template>
+    </category>
+    <category>
         <pattern>SYMPTOMS</pattern>
         <template>
             Cough
@@ -211,65 +437,41 @@
         </template>
     </category>
     <category>
-        <pattern>INDUSTRY</pattern>
+        <pattern>_SYMPTOMS</pattern>
         <template>
-            <srai>FACTORY</srai>
+            <srai>SYMPTOMS</srai>
         </template>
     </category>
     <category>
-        <pattern>SCHOOL</pattern>
-        <template>School is an important institution in a child's life.</template>
-    </category>
-    <category>
-        <pattern>_ SCHOOL</pattern>
+        <pattern>SYMPTOMS *</pattern>
         <template>
-            <srai>SCHOOL</srai>
+            <srai>SYMPTOMS</srai>
         </template>
     </category>
     <category>
-        <pattern>SCHOOL *</pattern>
+        <pattern>_SYMPTOMS *</pattern>
         <template>
-            <srai>SCHOOL</srai>
+            <srai>SYMPTOMS</srai>
         </template>
     </category>
     <category>
-        <pattern>_ SCHOOL *</pattern>
+        <pattern>_SYMPTOM</pattern>
         <template>
-            <srai>SCHOOL</srai>
+            <srai>SYMPTOMS</srai>
         </template>
     </category>
     <category>
-        <pattern>WHAT ABOUT MOVIES</pattern>
-        <template>Do you like comedy movies</template>
+        <pattern>SYMPTOM *</pattern>
+        <template>
+            <srai>SYMPTOMS</srai>
+        </template>
     </category>
     <category>
-        <pattern>YES</pattern>
-        <that>DO YOU LIKE COMEDY MOVIES</that>
-        <template>Nice, I like comedy movies too.</template>
+        <pattern>_SYMPTOM *</pattern>
+        <template>
+            <srai>SYMPTOMS</srai>
+        </template>
     </category>
-    <category>
-        <pattern>NO</pattern>
-        <that>DO YOU LIKE COMEDY MOVIES</that>
-        <template>Ok! But I like comedy movies.</template>
-    </category>
-    <category>
-        <pattern>LET`S DISCUSS MOVIES</pattern>
-        <template>Yes <set name="topic">movies</set></template>
-    </category>
-    <topic name="MOVIES">
-        <category>
-            <pattern>*</pattern>
-            <template>Watching good movie refreshes our minds.</template>
-        </category>
-    </topic>
-
-    <topic name="MOVIES">
-        <category>
-            <pattern>I LIKE WATCHING COMEDY!</pattern>
-            <template>I like comedy movies too.</template>
-        </category>
-    </topic>
-
     <category>
         <pattern>MY NAME IS *</pattern>
         <template>Hello!<think>
@@ -281,7 +483,19 @@
     </category>
     <category>
         <pattern>BYEEE</pattern>
-        <template>Hi <get name="username"/> Thanks for the conversation!</template>
+        <template>Hi <get name="username"/> Thanks for the conversation! Be safe from Coronavirus.</template>
+    </category>
+    <category>
+        <pattern>BYE</pattern>
+        <template>Hi <get name="username"/> Thanks for the conversation! Be safe from Coronavirus.</template>
+    </category>
+    <category>
+        <pattern>GOOD BYE</pattern>
+        <template>Hi <get name="username"/> Thanks for the conversation! Be safe from Coronavirus.</template>
+    </category>
+    <category>
+        <pattern>GOOD *</pattern>
+        <template>You too.</template>
     </category>
     <category>
         <pattern>HOW ARE YOU FEELING TODAY</pattern>

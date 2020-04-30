@@ -1,0 +1,45 @@
+0,HELLO,*,*,<random>#Newline                <li> Hello! </li>#Newline                <li> Hi! Nice to meet you! </li>#Newline                <li>Hey! Good day! </li>#Newline                <li>Hi My friend</li>#Newline            </random>,corona.aiml
+0,I AM *,*,*,Hello <set name="username"> #Newline                <star/>! </set>,corona.aiml
+0,HELLO *,*,*,<srai>HELLO</srai>,corona.aiml
+0,HI,*,*,<srai>HELLO</srai>,corona.aiml
+0,HEY,*,*,<srai>HELLO</srai>,corona.aiml
+0,_ HELLO,*,*,<srai>HELLO</srai>,corona.aiml
+0,_ HELLO *,*,*,<srai>HELLO</srai>,corona.aiml
+0,TEST,*,*,Test<reference about="http://covid19.rdf#I_3"/>,corona.aiml
+0,TELL ME ABOUT *,*,*,Here is some info about <star/>#Newline            <button>#Newline                <text>Click here </text>#Newline                <url>en#Commawikipedia.org/wiki<star/></url>#Newline            </button>,corona.aiml
+0,I LIKE *,*,*,I too like <star/>.,corona.aiml
+0,* IS A *,*,*,How <star index="1"/> can not be a <star index="2"/>?,corona.aiml
+0,GOOD NIGHT,*,*,Hi <get name="username"/> Thanks for the conversation!,corona.aiml
+0,BYE,*,*,Good Bye!,corona.aiml
+0,BYE *,*,*,<srai>BYE</srai>,corona.aiml
+0,_ BYE *,*,*,<srai>BYE</srai>,corona.aiml
+0,CORONA,*,*,Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus. #Newline            The disease causes respiratory illness (like the flu) with symptoms such as a cough#Comma#Newline            fever#Comma and in more severe cases#Comma difficulty breathing. #Newline            You can protect yourself by washing your hands frequently#Comma avoiding touching your face#Comma #Newline            and avoiding close contact (1 meter or 3 feet) with people who are unwell. It takes 1- 14 days to show symptoms.,corona.aiml
+0,_CORONA,*,*,<srai>CORONA</srai>,corona.aiml
+0,CORONA *,*,*,<srai>CORONA</srai>,corona.aiml
+0,COVID-19,*,*,<srai>CORONA</srai>,corona.aiml
+0,COVID *,*,*,<srai>CORONA</srai>,corona.aiml
+0,_COVID *,*,*,<srai>CORONA</srai>,corona.aiml
+0,CORONAVIRUS,*,*,<srai>CORONA</srai>,corona.aiml
+0,_CORONAVIRUS,*,*,<srai>CORONA</srai>,corona.aiml
+0,CORONAVIRUS *,*,*,<srai>CORONA</srai>,corona.aiml
+0,_CORONAVIRUS *,*,*,<srai>CORONA</srai>,corona.aiml
+0,HIGH RISK,*,*,People aged 65 years and older.#Newline            People who live in a nursing home or long-term care facility.#Newline            People with chronic lung disease or moderate to severe asthma.#Newline            People who have serious heart conditions.#Newline            People who are immunocompromised.#Newline            People with severe obesity (body mass index [BMI] of 40 or higher.#Newline            People with diabetes.#Newline            People with chronic kidney disease undergoing dialysis.#Newline            People with liver disease.,corona.aiml
+0,INFECTION POSSIBILITIES,*,*,Through small droplets from the nose or mouth which are spread when a person with COVID-19 coughs or exhales.,corona.aiml
+0,COUNTRIES,*,*,Germany#Newline            Spain#Newline            France#Newline            Italy#Newline            United States of America,corona.aiml
+0,MEDICATIONS,*,*,Rest and sleep well.#Newline            Keep warm.#Newline            Drink plenty of liquids.#Newline            Use a room humidifier and take hot showers to help ease a sore throat and cough.,corona.aiml
+0,PRECAUTIONS,*,*,Stay home as much as you can.#Newline            Keep a safe distance.#Newline            Wash hands often.#Newline            Cover your cough.#Newline            Sick? Meet a doctor.,corona.aiml
+0,SYMPTOMS,*,*,Cough#Newline            Fever#Newline            Tiredness#Newline            Difficulty in breathing,corona.aiml
+0,INDUSTRY,*,*,<srai>FACTORY</srai>,corona.aiml
+0,SCHOOL,*,*,School is an important institution in a child's life.,corona.aiml
+0,_ SCHOOL,*,*,<srai>SCHOOL</srai>,corona.aiml
+0,SCHOOL *,*,*,<srai>SCHOOL</srai>,corona.aiml
+0,_ SCHOOL *,*,*,<srai>SCHOOL</srai>,corona.aiml
+0,WHAT ABOUT MOVIES,*,*,Do you like comedy movies,corona.aiml
+0,YES,DO YOU LIKE COMEDY MOVIES,*,Nice#Comma I like comedy movies too.,corona.aiml
+0,NO,DO YOU LIKE COMEDY MOVIES,*,Ok! But I like comedy movies.,corona.aiml
+0,LET`S DISCUSS MOVIES,*,*,Yes <set name="topic">movies</set>,corona.aiml
+0,*,*,MOVIES,Watching good movie refreshes our minds.,corona.aiml
+0,I LIKE WATCHING COMEDY!,*,MOVIES,I like comedy movies too.,corona.aiml
+0,MY NAME IS *,*,*,Hello!<think>#Newline                <set name="username"> #Newline                    <star/>#Newline                </set>#Newline            </think>,corona.aiml
+0,BYEEE,*,*,Hi <get name="username"/> Thanks for the conversation!,corona.aiml
+0,HOW ARE YOU FEELING TODAY,*,*,<think>#Newline                <set name="state"> happy</set>#Newline            </think>#Newline            <condition name="state" value="happy">#Newline                I am happy!#Newline            </condition>#Newline            <think>#Newline                <set name="state"> sad</set>#Newline            </think>#Newline            <condition name="state" value="sad">#Newline                I am sad!#Newline            </condition>,corona.aiml
